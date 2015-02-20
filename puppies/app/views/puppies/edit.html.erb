@@ -9,7 +9,6 @@
 <% end %>
 
 <%= form_for @puppy, url: "/puppies/#{@puppy.id}", method: "PUT" do |f| %>
-  
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>
