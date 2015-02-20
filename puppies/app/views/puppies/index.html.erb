@@ -1,0 +1,14 @@
+<h1>Puppy Index</h1>
+
+
+<ul>
+<%  @puppies.each do |puppy| %>
+  <li>
+    <%= puppy.name %>, <%= puppy.age %>, <%= puppy.breed %>
+    <a href="/puppies/<%= puppy.id %>">Look at this sweet pup</a>
+    <a href="/puppies/<%= puppy.id %>/edit">Edit this pup's deets</a>
+  </li>
+<% end %>
+</ul>
+
+<a href="/puppies/new">Add a puppy</a>
